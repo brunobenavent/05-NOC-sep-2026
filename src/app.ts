@@ -1,6 +1,15 @@
+import { Server } from './presentation/server'
 
 
- const name:string = "Brunod";
+
+( async()=>{
+    await main()
+})()
 
 
-console.log(`Hello! My name is ${name}`);
+
+ async function main(){
+    console.log("Starting server...")
+    Server.start()
+
+}
